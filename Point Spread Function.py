@@ -81,3 +81,5 @@ im = ax.plot([int(run.z[maxi_z]), int(run.z[maxi_z])],
              [np.min(x), np.max(x)], color='white')
 im = ax.pcolormesh(run.z, x, run.power_field, cmap='gnuplot2')
 fig.colorbar(im, ax=ax)
+
+# just for test
