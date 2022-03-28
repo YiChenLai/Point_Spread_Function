@@ -53,26 +53,28 @@ def phase_mask(x, y, f, wavelength):
     if np.size(y) > 1:
         x_mesh, y_mesh = np.meshgrid(x, y)
         amp = np.ones((np.size(x), np.size(y)))
-        phase = (-2*np.pi/wavelength)*(np.sqrt((x_mesh**2+y_mesh**2+f**2))-f)
+        phase = (-2*np.pi/wavelength) * \
+            (np.sqrt((x_mesh**2+y_mesh**2+f**2))-f)+np.pi
         phase_wrap = np.mod(phase+np.pi, 2*np.pi)
         fig, ax = plt.subplots()
         im = ax.pcolormesh(x, y, phase_wrap, cmap='jet')
         fig.colorbar(im, ax=ax)
     else:
         amp = np.ones((np.size(x, 0), 1))
-        phase = (-2*np.pi/wavelength)*(np.sqrt((x**2+f**2))-f)
+        phase = (-2*np.pi/wavelength)*(np.sqrt((x**2+f**2))-f)+np.pi
+        phase_wrap = np.mod(phase, 2*np.pi)
         fig, ax = plt.subplots()
-        ax.plot(x, phase)
+        ax.plot(x, phase_wrap)
 
     return amp, phase
 
 
 # Phase Mask
 x, y = np.linspace(-10, 10, 101), 1  # np.linspace(-10, 10, 101)
-data = phase_mask(x, y, 100, 0.5)
+data = phase_mask(x, y, 50, 0.5)
 
 # Field Calculate
-run = Point_Spread_Func(0.5, x, y, data[0], data[1], 150, 1)
+run = Point_Spread_Func(0.5, x, y, data[0], data[1], 60, 1)
 run.Huygens_Fresnel_principle()
 maxi_x, maxi_z = np.where(run.power_field == np.max(run.power_field))
 
