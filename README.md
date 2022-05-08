@@ -35,12 +35,15 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 經過計算之後可以得到以下結果 : 
 
 * 振幅分布
-![image]()
+
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Amplitude%20field.png)
 
 * 能量分布
+
 ![image]()
 
 * 相位分布
+
 ![image]() 
 
 
