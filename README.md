@@ -26,7 +26,7 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 根據上述條件生成出來的相位分布如下圖:
 
-![image]()
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/phase%20distribution.png)
 
 同時，預設每一個點的振幅皆為 1。
 
@@ -40,11 +40,11 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 * 能量分布
 
-![image]()
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Power%20field.png)
 
 * 相位分布
 
-![image]() 
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Phase%20field.png) 
 
 
 
