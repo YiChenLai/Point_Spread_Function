@@ -1,4 +1,4 @@
-#  點擴散函數 (Point-Spread-Function)
+#  點擴散函數 (Point Spread Function)
 
 ## 介紹
 
