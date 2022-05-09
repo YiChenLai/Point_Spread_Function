@@ -53,7 +53,7 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 沿用與一位相位與振幅分布的工作波長與聚焦長度的條件，生成得相位分布如下圖:
 
-i[image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20phase%20distribution.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20phase%20distribution.png)
 
 同時，預設每一個網格的振幅皆為 1，並做 Input 條件。
 
