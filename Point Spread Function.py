@@ -48,6 +48,9 @@ class Point_Spread_Func():
                     field[xi, zi] = np.sum(
                         np.exp(1j*self.phase)*np.exp(1j*2*np.pi*distance/self.wavelength))
             self.power_field = abs(field)**2
+            self.amp_field = abs(field)
+            self.phase_field = np.angle(field)
+
         end = time.time()
         print(end-start, 'Seconds')
 
@@ -58,7 +61,7 @@ def phase_mask(x, y, f, wavelength):
         amp = np.ones((np.size(x), np.size(y)))
         phase = (-2*np.pi/wavelength) * \
             (np.sqrt((x_mesh**2+y_mesh**2+f**2))-f)+np.pi
-        phase_wrap = np.mod(phase+np.pi, 2*np.pi)
+        phase_wrap = np.mod(phase, 2*np.pi)
         fig, ax = plt.subplots()
         im = ax.pcolormesh(x, y, phase_wrap, cmap='jet')
         plt.xlabel('X Axis')
@@ -79,7 +82,7 @@ def phase_mask(x, y, f, wavelength):
 
 
 # Phase Mask
-x, y = np.linspace(-10, 10, 101), 1  # np.linspace(-10, 10, 101)
+x, y = np.linspace(-10, 10, 101),  np.linspace(-10, 10, 101)
 data = phase_mask(x, y, 50, 0.5)
 
 # Field Calculate
