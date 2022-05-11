@@ -28,7 +28,7 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 根據上述條件生成出來的相位分布如下圖:
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/phase%20distribution.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/phase_distribution.png)
 
 同時，預設每一個網格的振幅皆為 1。
 
@@ -38,22 +38,22 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 * 振幅分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Amplitude%20field.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/amplitude_field.png)
 
 * 能量分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Power%20field.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/power_field.png)
 
 * 相位分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/Phase%20field.png) 
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/phase_field.png) 
 
 ---
 ### 二維相位與振幅分布
 
 沿用與一位相位與振幅分布的工作波長與聚焦長度的條件，生成得相位分布如下圖:
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20phase%20distribution.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D_phase_distribution.png)
 
 同時，預設每一個網格的振幅皆為 1，並做 Input 條件。
 
@@ -61,15 +61,15 @@ Output : 將記錄傳播過程的每個網格的複數，複數代表自由空�
 
 * 振幅分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20Amplitude%20field.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D_amplitude_field.png)
 
 * 能量分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20Power%20field.png)
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D_power_field.png)
 
 * 相位分布
 
-![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D%20Phase%20field.png) 
+![image](https://github.com/YiChenLai/Point-Spread-Function/blob/master/image/2D_phase_field.png) 
 
 
 ---
